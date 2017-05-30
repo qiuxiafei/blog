@@ -4,10 +4,10 @@
 
 # Site
 title: 二叔会编程
-subtitle: 个人博客，技术为主，八卦为辅，菜鸟请点赞，老鸟请指教，撕逼请绕行。
-description: 
+subtitle: Do not pray for an easy life, pray for the strength to endure a difficult one.
+description: 个人博客，技术为主，八卦为辅，菜鸟请点赞，老鸟请指教，撕逼请绕行。
 author: qiuxiafei
-language: Chinese
+language: zh-Hans
 timezone: Asia/Shanghai
 
 # URL
@@ -63,8 +63,10 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-#theme: landscape
-theme: pacman 
+theme: next
+
+plugin:
+- hexo-generator-feed
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -73,3 +75,9 @@ deploy:
   repo: git@github.com:qiuxiafei/qiuxiafei.github.com.git
   branch: master
 
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
